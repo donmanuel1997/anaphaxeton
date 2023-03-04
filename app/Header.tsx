@@ -13,11 +13,7 @@ export const Header = () => {
             <Link href="./">
                 <h3 className=' tracking-widest text-sm'>ANAPHAXETON</h3>
             </Link>
-                <Link href="./" className='flex space-x-1'>
-                <div className='lg:hidden bg-gray-800 rounded-full p-2'>
-                    <HomeIcon  className="h-4 w-4 text-white"/>
-                </div>
-                </Link>
+                
             </div>
         </div>
         <div className='flex flex-1 justify-between mx-4 items-center '>
@@ -36,10 +32,6 @@ export const Header = () => {
             <div></div>
             </div>
             <div className='flex space-x-2'>
-            <div className='flex justify-center items-center font-sans cursor-pointer hover:bg-gray-800 hover:text-white hover:white py-2 px-4 rounded-lg'>
-                <LanguageIcon  className="h-4 w-4"/>
-                <div className='hidden lg:flex text-sm opacity-80'>Languages</div>
-            </div>
             <div className='flex cursor-pointer justify-center items-center font-sans hover:text-gray-800 bg-gray-800 hover:bg-gray-100 text-white  py-1 px-5 border border-gray-400 rounded-lg shadow'>
             
             <Link href="./Signin" className='flex space-x-1'>
