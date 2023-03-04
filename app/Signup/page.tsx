@@ -22,25 +22,17 @@ export default function Page() {
         const SignupUser = async (e: { preventDefault: () => void; }) => {
                 e.preventDefault()
                 setReady(true)
-                const promise = account.create(
+                try {   const promise = account.create(
                         ID.unique(),
                         user.email,
                         user.password,
                         user.fullname
-                )
-                promise.then(function (response) {
-                        setSuccess(true)
-                        setInterval(() => {
-                                router.push("./Signin")
-                                }, 4000);
-                },
-                        function (error) {
-                                setErrorlogger(error)
-                                setReady(false)
-                                setInterval(() => {
-                                setErrorlogger("")
-                                }, 4000);
-                        })
+                )     
+                } catch (error) {
+                       console.log(error) 
+                }
+                
+                
         }
 
 
