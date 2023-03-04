@@ -46,7 +46,7 @@ export default function Page() {
   return (
     <div>
     <Header />
-    <div className="flex flex-1 h-screen  justify-center items-center bg-gray-800">
+    <div className="flex flex-1 h-screen w-screen justify-center items-center bg-gray-800">
         
         <div className="flex flex-col space-y-1 bg-white w-4/5 h-3/5 lg:w-3/5 lg:h-3/5 p-3 justify-center items-center rounded-lg space-x-5">
          <div className="">
@@ -60,7 +60,8 @@ export default function Page() {
                                         {errorlogger ?
                                                         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
                                                                 <span className="text-center">
-                                                                       Oops, an error occured!
+                                                                       Oops, an error occured!<br/>
+                                                                       {""+errorlogger}
                                                                 </span>
                                                         </div> : null}
          <div className="flex justify-center items-center space-x-2">
