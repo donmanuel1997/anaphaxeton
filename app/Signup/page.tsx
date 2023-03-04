@@ -29,7 +29,8 @@ export default function Page() {
                         user.fullname
                 )     
                 } catch (error) {
-                       console.log(error) 
+                        setErrorlogger("No work: "+error)
+                        setReady(false)
                 }
                 
                 
