@@ -27,7 +27,8 @@ export default function Page() {
                         user.email,
                         user.password,
                         user.fullname
-                )     
+                )
+                setSuccess(true) 
                 } catch (error) {
                         setErrorlogger("No work: "+error)
                         setReady(false)
