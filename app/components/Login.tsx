@@ -11,7 +11,7 @@ export default function Login({}: Props) {
   return (
     <div className='h-screen flex flex-col bg-gray-800'>
     <Head />
-    <div className='flex flex-col  flex-1  justify-center items-center'>
+    <div className='flex flex-col  md:flex-1 my-8 md:my-0  justify-center items-center'>
       <div className=' animate-pulse text-2xl font-bold rounded-full text-white tracking-widest p-1 bg-gray-900'>
         <img src='./openai.jpg' className='w-12 h-12 rounded-full' />
       </div>
