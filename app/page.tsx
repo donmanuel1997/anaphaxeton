@@ -1,40 +1,52 @@
-import { EnvelopeIcon, KeyIcon, UserIcon } from "@heroicons/react/24/solid"
-import Image from "next/image"
-import Link from "next/link"
-import "../styles/globals.css"
-import Footer from "./Footer"
-import { Header } from "./Header"
+import React from 'react'
+import { BeakerIcon, BoltIcon, ExclamationTriangleIcon, SunIcon } from '@heroicons/react/24/solid'
+
 function page() {
   return (
-    <div>
-    <Header />
-    <div className="relative flex flex-1  h-screen  justify-center items-center">
-     <Image
-       src="/bg.webp"
-       alt="X"
-       layout="fill"
-       objectFit="cover"
-       className="w-fit blur-sm" />
-        <div className="absolute flex w-2/5 justify-center items-center">
-            <div className="flex flex-col justify-center items-center">
-              <h1 className=" flex text-6xl text-white font-sans justify-center items-center">Anaphaxeton</h1>
-              <div className="flex flex-col  justify-center items-center">
-                <p className="flex mt-6 text-white  justify-center items-center">
-                  We{"'"}ve trained this model which interacts in a conversational way. The dialogue format makes it possible for ChatGPT to answer followup questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests.</p>
-              
-              <div className="flex justify-center items-center space-x-2">
-                <Link href="/Signup">
-              <div className=" mt-12  bg-gray-100 p-3 text-gray-800 rounded-lg opacity-70 cursor-pointer">Get Started</div>
-              </Link>
-              <Link href="https://primeumaton.org/#about">
-              <div className=" mt-12  border-gray-100 p-3 border text-white rounded-lg opacity-70 cursor-pointer">Contact Developer</div>
-              </Link>
-              </div>
-            </div>
-            </div>
+    <div className='flex flex-1 flex-col h-screen px-4 text-white items-center justify-center '>
+      <h1 className='text-4xl font-bold mb-20'>
+        ChatGPT
+      </h1>
+
+      <div className='flex space-x-2 text-center'>
+        <div>
+          <div className='flex flex-col items-center justify-center mb-5'>
+          <SunIcon className="h-6 w-6 text-white"/>
+            <h2>Example</h2>
+          </div>
+          <div className=' space-y-2'>
+            <p className='hText'>Explain something to me</p>
+            <p className='hText'>What is the difference between a dog and a cat?</p>
+            <p className='hText'>What is the color of the sun?</p>
+          </div>
         </div>
-    </div>
-    <Footer />
+
+
+        <div>
+          <div className='flex flex-col items-center justify-center mb-5'>
+          <BoltIcon className="h-6 w-6 text-white"/>
+            <h2>Capabilities</h2>
+          </div>
+          <div className=' space-y-2'>
+            <p className='hText'>Use any ChatGPT model</p>
+            <p className='hText'>Fully functional database.</p>
+            <p className='hText'>Hot Toast notifications when chatGPT is thinking! </p>
+          </div>
+        </div>
+
+
+        <div>
+          <div className='flex flex-col items-center justify-center mb-5'>
+          <ExclamationTriangleIcon className="h-6 w-6 text-white"/>
+            <h2>Limitations</h2>
+          </div>
+          <div className=' space-y-2'>
+            <p className='hText'>May occasionally generate incorrect information</p>
+            <p className='hText'>May occationally produce harmful instructions or biased contents</p>
+            <p className='hText'>Limited knowledge of the world and events after 2021</p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
