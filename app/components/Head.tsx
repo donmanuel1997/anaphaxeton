@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 type Props = {}
@@ -14,7 +15,9 @@ export default function Head({}: Props) {
       </div>
     </div>
     <div className=' cursor-pointer hover:bg-gray-800 hover:text-white flex border border-gray-800 rounded-lg px-4 justify-end items-center text-xs mr-2'>
+    <Link href="https://primeumaton.org/#about" target="_blank">
         The Developer
+      </Link>
     </div>
     </div>
   )
