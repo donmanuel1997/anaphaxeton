@@ -10,7 +10,7 @@ type Props = {}
 
 export default function Login({}: Props) {
   return (
-    <div className='lg:h-screen w-screen flex-1 flex flex-col bg-gray-800'>
+    <div className='h-screen w-screen flex-1 flex flex-col bg-gray-800'>
     <Head />
     <div className='flex-1 flex-col my-2 justify-center items-center'>
       
