@@ -3,8 +3,8 @@ import { BeakerIcon, BoltIcon, ExclamationTriangleIcon, SunIcon } from '@heroico
 
 function page() {
   return (
-    <div className='flex flex-1 flex-col h-screen px-4 text-white items-center justify-center '>
-      <h1 className='text-4xl font-bold mb-20'>
+    <div className='flex flex-1 flex-col lg:h-screen px-4 text-white items-center justify-center '>
+      <h1 className='text-4xl font-bold mb-20 mt-10 lg:mt-0'>
         ChatGPT
       </h1>
 

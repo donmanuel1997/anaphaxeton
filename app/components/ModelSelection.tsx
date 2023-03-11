@@ -15,13 +15,13 @@ function ModelSelection() {
   return (
     <div className="mt-2">
       <Select
-        className="h-10"
+        className=""
         defaultValue={model}
         isSearchable
         isLoading={isLoading}
         menuPosition="fixed"
         classNames={{
-          control: (state) => "bg-[#434654] border-[#434654]",
+          control: (state) => "bg-transparent text-white",
         }}
         placeholder={model}
         onChange={(e) => setModel(e.value)}

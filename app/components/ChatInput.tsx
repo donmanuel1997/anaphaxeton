@@ -70,10 +70,6 @@ export default function ChatInput({chatId}: Props) {
           <PaperAirplaneIcon className='h-4 w-4 -rotate-45' />
         </button>
       </form>
-
-      <div className='inline md:hidden'>
-        <ModelSelection />
-      </div>
     </div>
   )
 }

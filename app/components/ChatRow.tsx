@@ -36,7 +36,7 @@ export default function ChatRow({id}: Props) {
   return (
    <Link href={`/chat/${id}`} className={`chatRow ${active && 'bg-slate-300 text-gray-800 hover:text-white'}`}>
     <ChatBubbleLeftIcon className='h-5 w-5' />
-    <p className='flex-1 hidden md:inline'>
+    <p className='flex-1'>
     {messages?.docs[messages?.docs.length - 1]?.data().text || "New Chat"}
     </p>
     <TrashIcon onClick={removeChat} className='h-5 w-5 hover:text-red-600' />

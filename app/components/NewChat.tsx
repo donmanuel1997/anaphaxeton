@@ -21,7 +21,7 @@ export default function NewChat({ }: Props) {
   return (
     <div onClick={createNewChat} className='chatRow border border-gray-700 items-center justify-center'>
       <PlusIcon className="h-4 w-4" />
-      <div className='hidden md:inline'>
+      <div className=''>
         New Chat
       </div>
     </div>
