@@ -33,7 +33,7 @@ export default function Login({}: Props) {
         </button>
       </div>
 
-      <div className='flex p-3 mb-3 bg-white space-x-2 text-center'>
+      <div className='flex p-3 mb-3 bg-white rounded-lg space-x-2 text-center'>
         <div>
           <div className='flex flex-col items-center justify-center mb-5'>
           <SunIcon className="h-6 w-6  text-gray-800"/>
