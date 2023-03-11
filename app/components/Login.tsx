@@ -14,7 +14,7 @@ export default function Login({}: Props) {
     <Head />
     <div className='flex-1 flex-col justify-center items-center'>
       
-      <div className='flex-col flex-1 my-8 mx-auto w-1/3 justify-center items-center'>
+      <div className='flex-col flex-1 my-8 mx-auto w-fit justify-center items-center'>
      
       <div className='flex justify-center items-center text-2xl font-bold text-white tracking-widest'>
         ANAPHAXETON
