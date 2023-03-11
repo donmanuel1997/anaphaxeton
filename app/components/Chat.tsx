@@ -19,12 +19,12 @@ export default function Chat({chatId}: Props) {
   ))
 
   return (
-    <div className="flex-1 overflow-y-scroll overflow-x-hidden ">
+    <div className="flex-1  overflow-y-scroll overflow-x-hidden ">
       {messages?.empty && (
         <>
-          <p className="mt-10 text-center text-white">
+          <div className="mt-10 mb-[200px] text-center text-white">
             Type a prompt in below to get started!
-          </p>
+          </div>
           <ArrowDownCircleIcon className="h-10 w-10 mx-auto mt-5 text-white animate-bounce" />
         </>
       )}

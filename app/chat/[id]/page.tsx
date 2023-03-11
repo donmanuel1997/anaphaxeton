@@ -10,7 +10,7 @@ type Props = {
 
 export default function page({params : {id}}: Props) {
   return (
-    <div className="sm:flex-1 flex flex-col lg:h-screen overflow-hidden">
+    <div className="flex flex-col lg:h-screen overflow-hidden">
        {/*Chats*/}
        <Chat chatId={id}/>
        {/*Chats Input*/}
