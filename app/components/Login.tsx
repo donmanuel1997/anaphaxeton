@@ -12,7 +12,7 @@ export default function Login({}: Props) {
   return (
     <div className='h-screen w-screen flex flex-col bg-gray-800'>
     <Head />
-    <div className='flex flex-col  md:flex-1 my-8 md:my-0  justify-center items-center'>
+    <div className='flex flex-col my-2 justify-center items-center'>
       <div className=' animate-pulse text-2xl font-bold rounded-full text-white tracking-widest p-1 bg-gray-900'>
         <img src='./openai.jpg' className='w-12 h-12 rounded-full' />
       </div>
@@ -33,8 +33,8 @@ export default function Login({}: Props) {
         </button>
       </div>
 
-      <div className='flex p-3 mb-3 bg-white rounded-lg space-x-2 text-center'>
-        <div>
+      <div className='sm:flex p-3 m-3 mb-3 bg-white rounded-lg space-x-2 text-center'>
+        <div className='mb-5 lg:mb-0'>
           <div className='flex flex-col items-center justify-center mb-5'>
           <SunIcon className="h-6 w-6  text-gray-800"/>
             <h2>Example</h2>
@@ -47,7 +47,7 @@ export default function Login({}: Props) {
         </div>
 
 
-        <div>
+        <div  className='mb-5 lg:mb-0'>
           <div className='flex flex-col items-center justify-center mb-5'>
           <BoltIcon className="h-6 w-6 text-gray-800"/>
             <h2>Capabilities</h2>
@@ -60,7 +60,7 @@ export default function Login({}: Props) {
         </div>
 
 
-        <div>
+        <div  className='mb-5 lg:mb-0'>
           <div className='flex flex-col items-center justify-center mb-5'>
           <ExclamationTriangleIcon className="h-6 w-6  text-gray-800"/>
             <h2>Limitations</h2>
