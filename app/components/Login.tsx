@@ -3,13 +3,14 @@ import React from 'react'
 import { signIn } from 'next-auth/react'
 import Head from './Head'
 import Footer from './Footer'
+import { BoltIcon, ExclamationTriangleIcon, SunIcon } from '@heroicons/react/24/solid'
 
 
 type Props = {}
 
 export default function Login({}: Props) {
   return (
-    <div className='h-screen flex flex-col bg-gray-800'>
+    <div className='h-screen w-screen flex flex-col bg-gray-800'>
     <Head />
     <div className='flex flex-col  md:flex-1 my-8 md:my-0  justify-center items-center'>
       <div className=' animate-pulse text-2xl font-bold rounded-full text-white tracking-widest p-1 bg-gray-900'>
@@ -31,8 +32,49 @@ export default function Login({}: Props) {
           Sign In
         </button>
       </div>
+
+      <div className='flex p-3 mb-3 bg-white space-x-2 text-center'>
+        <div>
+          <div className='flex flex-col items-center justify-center mb-5'>
+          <SunIcon className="h-6 w-6  text-gray-800"/>
+            <h2>Example</h2>
+          </div>
+          <div className=' space-y-2'>
+            <p className='hText'>Explain something to me</p>
+            <p className='hText'>What is the difference between a dog and a cat?</p>
+            <p className='hText'>What is the color of the sun?</p>
+          </div>
+        </div>
+
+
+        <div>
+          <div className='flex flex-col items-center justify-center mb-5'>
+          <BoltIcon className="h-6 w-6 text-gray-800"/>
+            <h2>Capabilities</h2>
+          </div>
+          <div className=' space-y-2'>
+            <p className='hText'>Use any ChatGPT model</p>
+            <p className='hText'>Fully functional database.</p>
+            <p className='hText'>Hot Toast notifications when chatGPT is thinking! </p>
+          </div>
+        </div>
+
+
+        <div>
+          <div className='flex flex-col items-center justify-center mb-5'>
+          <ExclamationTriangleIcon className="h-6 w-6  text-gray-800"/>
+            <h2>Limitations</h2>
+          </div>
+          <div className=' space-y-2'>
+            <p className='hText'>May occasionally generate incorrect information</p>
+            <p className='hText'>May occationally produce harmful instructions or biased contents</p>
+            <p className='hText'>Limited knowledge of the world and events after 2021</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <Footer />
+
+
     </div>
 
   )
