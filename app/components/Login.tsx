@@ -10,17 +10,17 @@ type Props = {}
 
 export default function Login({}: Props) {
   return (
-    <div className='h-screen w-screen flex-1 flex flex-col bg-gray-800'>
+    <div className='h-screen  flex flex-col bg-gray-800'>
     <Head />
-    <div className='flex-1 flex-col my-2 justify-center items-center'>
+    <div className='flex-1 flex-col justify-center items-center'>
       
-      <div className='flex-col justify-center items-center'>
+      <div className='flex-col flex-1 my-8 mx-auto w-1/3 justify-center items-center'>
      
       <div className='flex justify-center items-center text-2xl font-bold text-white tracking-widest'>
         ANAPHAXETON
       </div>
-      <div className='m-8'>
-        <p className='text-white text-xs text-center'>
+      <div className='flex m-8'>
+        <p className='flex text-white text-xs text-center'>
         Creating safe artificial general intelligence that benefits all of humanity.        
         <br></br>We{"'"}ve trained a model called "ANAPHAXETON" ChatGPT which interacts in a conversational way. The dialogue format makes it possible for ChatGPT to answer follow-up questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests.
         
